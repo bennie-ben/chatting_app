@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="styles/styles.css")
+    title Home
+  body
+    .loginBox
+      form#jsLogin
+        input.textField(type="text" placeholder="What's your name?")
+        button(type="submit") Submit 
+    .gameBox#jsGame
+      .chatBox
+        ul.chat__messages#jsMessages
+        form.chat__form#jsSendMsg
+          input#chatTextField(type="text", placeholder="Write a message")
+          button#chatButton(type="submit") Send
+      p#loginText 
+      form#jsLogout
+        button#logoutBtn(type="submit") Logout
+    .notificationBox#jsNotifications
+    <script>window.socketEvent = !{socketEvent}</script>
+    script(src="/socket.io/socket.io.js")
+    script(src="/js/main.js")

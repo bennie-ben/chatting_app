@@ -1,0 +1,18 @@
+body{
+  .chatBox{
+    .chat__form{
+      margin-top: 300px;
+      
+    }
+    .chat__meassage{
+      input{
+        text-align: center;
+      }
+    }
+    form{
+      #logoutBtn{
+        margin-top: 0;
+      }
+    }
+  }
+}
